@@ -4,9 +4,15 @@ public class Rectangulo {
 	
 	int base;
 	int altura;
+	String color;
 	
 	
-	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
 	public int getBase() {
 		return base;
 	}
@@ -28,6 +34,10 @@ public class Rectangulo {
 	public int calcularPerimetro() {
 		int perimetro = altura * 2 + base * 2;
 		return perimetro;
+	}
+	
+	public void modificarColor(String color) {
+		this.color = color;
 	}
 	
 	Rectangulo(){
